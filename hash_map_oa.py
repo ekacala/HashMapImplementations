@@ -1,8 +1,4 @@
-# Name: Elizabeth Kacala
-# OSU Email: kacalae@oregonstate.edu
-# Course: CS261 - Data Structures
-# Assignment: 6
-# Due Date: 6/6/2024
+# Author: Elizabeth Kacala
 # Description: Contains a class that creates a hashmap using a dynamic
 # array and open addressing.
 
@@ -325,7 +321,7 @@ if __name__ == "__main__":
         m.put('str' + str(i), i * 100)
         if i % 25 == 24:
             print(m.empty_buckets(), round(m.table_load(), 2), m.get_size(), m.get_capacity())
-    """
+
     print("\nPDF - put example 2")
     print("-------------------")
     m = HashMap(41, hash_function_2)
@@ -333,7 +329,7 @@ if __name__ == "__main__":
         m.put('str' + str(i // 3), i * 100)
         if i % 10 == 9:
             print(m.empty_buckets(), round(m.table_load(), 2), m.get_size(), m.get_capacity())
-    """
+
     print("\nPDF - resize example 1")
     print("----------------------")
     m = HashMap(20, hash_function_1)
@@ -367,7 +363,7 @@ if __name__ == "__main__":
             # NOT inserted keys must be absent
             result &= not m.contains_key(str(key + 1))
         print(capacity, result, m.get_size(), m.get_capacity(), round(m.table_load(), 2))
-    """
+
     print("\nPDF - table_load example 1")
     print("--------------------------")
     m = HashMap(101, hash_function_1)
@@ -386,7 +382,7 @@ if __name__ == "__main__":
         m.put('key' + str(i), i * 100)
         if i % 10 == 0:
             print(round(m.table_load(), 2), m.get_size(), m.get_capacity())
-    """
+
     print("\nPDF - empty_buckets example 1")
     print("-----------------------------")
     m = HashMap(101, hash_function_1)
@@ -407,7 +403,7 @@ if __name__ == "__main__":
         m.put('key' + str(i), i * 100)
         if i % 30 == 0:
             print(m.empty_buckets(), m.get_size(), m.get_capacity())
-    """
+
     print("\nPDF - get example 1")
     print("-------------------")
     m = HashMap(31, hash_function_1)
@@ -502,7 +498,7 @@ if __name__ == "__main__":
     print(m.get_size(), m.get_capacity())
     m.clear()
     print(m.get_size(), m.get_capacity())
-    """
+
     print("\nPDF - __iter__(), __next__() example 1")
     print("---------------------")
     m = HashMap(10, hash_function_1)

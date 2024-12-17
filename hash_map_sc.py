@@ -1,8 +1,4 @@
-# Name: Elizabeth Kacala
-# OSU Email: kacalae@oregonstate.edu
-# Course: CS261 - Data Structures
-# Assignment: 6
-# Due Date: 6/6/2024
+# Author: Elizabeth Kacala
 # Description: Contains a class that creates a hashmap using a dynamic
 # array and linked lists.
 
@@ -324,7 +320,7 @@ if __name__ == "__main__":
     print(m.get_size(), m.get_capacity(), m.get('key1'), m.contains_key('key1'))
     m.resize_table(30)
     print(m.get_size(), m.get_capacity(), m.get('key1'), m.contains_key('key1'))
-    """
+
     print("\nPDF - resize example 2")
     print("----------------------")
     m = HashMap(75, hash_function_2)
@@ -347,7 +343,7 @@ if __name__ == "__main__":
             result &= not m.contains_key(str(key + 1))
         print(capacity, result, m.get_size(), m.get_capacity(), round(m.table_load(), 2))
     
-    """
+
     print("\nPDF - resize example 3")
     print("----------------------")
     m = HashMap(97, hash_function_1)
@@ -386,7 +382,7 @@ if __name__ == "__main__":
     m = HashMap(37, hash_function_1)
     m.resize_table(2)
     print(m)
-    """
+
     print("\nPDF - table_load example 1")
     print("--------------------------")
     m = HashMap(101, hash_function_1)
@@ -482,7 +478,7 @@ if __name__ == "__main__":
     m.remove('key1')
     print(m.get('key1'))
     m.remove('key4')
-    """
+
     print("\nPDF - get_keys_and_values example 1")
     print("------------------------")
     m = HashMap(11, hash_function_2)
@@ -494,7 +490,7 @@ if __name__ == "__main__":
     m.remove('1')
     m.resize_table(2)
     print(m.get_keys_and_values())
-    """
+
     print("\nPDF - clear example 1")
     print("---------------------")
     m = HashMap(101, hash_function_1)
@@ -537,5 +533,5 @@ if __name__ == "__main__":
         da = DynamicArray(case)
         mode, frequency = find_mode(da)
         print(f"Input: {da}\nMode : {mode}, Frequency: {frequency}\n")
-    """
+
 
